@@ -1,0 +1,76 @@
+$default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
+$rpx: 100vw / 1920;
+
+body {
+  div.main-container {
+    overflow: hidden;
+    width: calc(1920 * #{$rpx});
+    height: calc(2464 * #{$rpx});
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+
+    div {
+      width: calc(1920 * #{$rpx});
+      height: calc(700 * #{$rpx});
+      background-color: #eeeff1;
+      position: relative;
+      overflow: visible auto;
+      z-index: 47;
+      margin: 0 0 0 0;
+
+      div {
+        display: flex;
+        width: calc(646 * #{$rpx});
+        gap: calc(42 * #{$rpx});
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        position: relative;
+        z-index: 50;
+        margin: calc(79 * #{$rpx}) 0 0 calc(399 * #{$rpx});
+
+        span {
+          height: calc(27 * #{$rpx});
+          flex-shrink: 0;
+          flex-basis: auto;
+          font-family: Roboto, $default-font-family;
+          font-size: calc(16 * #{$rpx});
+          font-weight: 500;
+          line-height: calc(26.25 * #{$rpx});
+          color: #ffffff;
+          position: relative;
+          text-align: left;
+          white-space: nowrap;
+          z-index: 51;
+        }
+      }
+
+      .image {
+        width: calc(50 * #{$rpx});
+        height: calc(50 * #{$rpx});
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: calc(100 * #{$rpx});
+        overflow: hidden;
+      }
+
+      span {
+        display: block;
+        height: calc(19 * #{$rpx});
+        font-family: Roboto, $default-font-family;
+        font-size: calc(21 * #{$rpx});
+        font-weight: 500;
+        line-height: calc(19 * #{$rpx});
+        color: #ffffff;
+        position: relative;
+        text-align: left;
+        white-space: nowrap;
+        z-index: 41;
+        margin: calc(50 * #{$rpx}) 0 0 calc(406 * #{$rpx});
+      }
+    }
+  }
+}
